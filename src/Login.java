@@ -4,10 +4,10 @@ public class Login {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Etunimi?");
+        System.out.print("Etunimesi?");
         String etunimi = input.nextLine();
 
-        System.out.print("Sukunimi?");
+        System.out.print("Sukunimesi?");
         String sukunimi = input.nextLine();
 
         System.out.print("Yrityksen verkkotunnus?");
@@ -16,7 +16,7 @@ public class Login {
         if (etunimi.isEmpty() || sukunimi.isEmpty() || verkkotunnus.isEmpty()) {
             System.out.println("Virhe! Jokin tiedoista puuttui.");
             if (etunimi.isEmpty()) {
-                System.out.println("Käyttäjä ei kirjoittanut etunimeä.");
+                System.out.println("Käyttäjä ei antanut tietoa etunimi.");
             } else if (sukunimi.isEmpty()) {
                 System.out.println("Käyttäjä ei kirjoittanut sukunimeä.");
             } else if (verkkotunnus.isEmpty()) {
