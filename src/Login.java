@@ -18,9 +18,9 @@ public class Login {
             if (etunimi.isEmpty()) {
                 System.out.println("Käyttäjä ei antanut tietoa etunimi.");
             } else if (sukunimi.isEmpty()) {
-                System.out.println("Käyttäjä ei kirjoittanut sukunimeä.");
+                System.out.println("Käyttäjä ei antanut tietoa sukunimi.");
             } else if (verkkotunnus.isEmpty()) {
-                System.out.println("Käyttäjä ei kirjoittanut verkkotunnusta.");
+                System.out.println("Käyttäjä ei antanut tietoa verkkotunnus.");
             }
         } else {
             GenerateEmail(etunimi, sukunimi, verkkotunnus);
